@@ -1,0 +1,37 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    
+}
+
+.nav a {
+    height: 20px;
+    padding: 5px, 5px;
+    color: red;
+}
+
+.nav a:hover {
+    color: green;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+/* .navbar{
+    
+} */
+
+.nav-container {
+    color: white;
+}
+
+.collapse {
+    padding: 0, 10px, 0, 10px;
+    border-right: 5px;
+}
