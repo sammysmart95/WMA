@@ -1,0 +1,23 @@
+{
+  "name": "w-montessori",
+  "version": "1.0.0",
+  "description": "my first server site ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sammysmart95/WMA.git"
+  },
+  "keywords": [],
+  "author": "smart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sammysmart95/WMA/issues"
+  },
+  "homepage": "https://github.com/sammysmart95/WMA#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
