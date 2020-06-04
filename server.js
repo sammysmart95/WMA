@@ -1,10 +1,19 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
+// const ejs = require("ejs");
+dotenv.config({ path: "./config/config.env" });
 
-require('dotenv').config()
+const app = express();
+app.set("view engine", "ejs");
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }));
+let PORT = process.env.PORT || 3000;
 
-app.use(express.static('src'))
+app.get("/", (req, res) => {
+  res.render("index");
+});
 
-app.listen(process.env.PORT || 8080, ()=> 
-console.log(`App is running in port ${process.env.PORT}`)
-)
+app.listen(PORT, process.env.IP, () =>
+  console.log(`App is running in port ${PORT}`)
+);
